@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        thead {
+            background-color: lightgray;
+        }
+        tfoot {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Marks Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th colspan="3">Subjects</th>
+            </tr>
+            <tr>
+                <th>Operating Systems</th>
+                <th>Artificial Intelligence</th>
+                <th>Web technology</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jimin</td>
+                <td>85</td>
+                <td>80</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>Jungkook</td>
+                <td>80</td>
+                <td>76</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Taehyung</td>
+                <td>85</td>
+                <td>75</td>
+                <td>77</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Average Marks:81.22</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

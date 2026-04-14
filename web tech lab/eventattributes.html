@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Attributes Examples</title>
+</head>
+<body>
+    <h2>Event Attributes</h2>
+    <button onclick="showMessage()">Click Me</button>
+    <br><br>
+    <label>Select your favorite subject:</label>
+    <select onchange="changeSubject(this.value)">
+        <option value="">--Select--</option>
+        <option value="Artificial Intelligence">Artificial Intelligence</option>
+        <option value="Web technology">Web technology</option>
+        <option value="Operating System">Operating System</option>
+    </select>
+    <br><br>
+    <p onmouseenter="hoverEffect()" style="width: 200px; padding: 10px; border: 1px solid black;">
+        Move your mouse here
+    </p>
+    <script>
+        function showMessage() {
+            alert("Button clicked!");
+        }
+         function changeSubject(value) {
+            alert("You selected:" + value);
+         }
+         function hoverEffect() {
+            alert("Mouse entered the paragraph!");
+         }
+    </script>
+</body>
+</html>
