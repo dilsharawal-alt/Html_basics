@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Grid Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .box {
+            background-color: lightblue;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .sidebar {
+            background-color: lightgray;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="header">
+    <h2>My Bootstrap Website</h2>
+</div>
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="#">About</a>
+        <a class="navbar-brand" href="#">Services</a>
+        <a class="navbar-brand" href="#">Contact</a>
+    </div>
+</nav>
+<div class="container mt-3">
+
+    <div class="row">
+
+        <div class="col-md-8">
+            <div class="box">
+                <h3>Main Content</h3>
+                <p>This is the main area using Bootstrap grid system.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="sidebar">
+                <h4>Sidebar</h4>
+                <p>Links and extra content go here.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="row mt-3">
+
+        <div class="col-md-4">
+            <div class="box">Box 1</div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="box">Box 2</div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="box">Box 3</div>
+        </div>
+
+    </div>
+
+</div>
+<div class="footer mt-3">
+    <p>&copy; 2026 My Website</p>
+</div>
+</body>
+</html>
