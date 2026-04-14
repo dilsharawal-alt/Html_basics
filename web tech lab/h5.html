@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Page Layout</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            padding: 10px;
+        }
+        section {
+            flex: 3;
+            padding: 10px;
+        }
+        aside {
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        article {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>My Website</h1>
+    <p>Welcome to HTML5 Semantic Layout</p>
+</header>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+<main>
+    <section>
+        <h2>Main Articles</h2>
+        <article>
+            <h3>Article 1</h3>
+            <p>This is the first article content.</p>
+        </article>
+
+        <article>
+            <h3>Article 2</h3>
+            <p>This is the second article content.</p>
+        </article>
+    </section>
+    <aside>
+        <h3>Sidebar</h3>
+        <p>Extra links and ads go here.</p>
+    </aside>
+</main>
+<footer>
+    <p>&copy; 2026 My Website. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
